@@ -2,7 +2,7 @@
 
 export  interface Room{
   _id: string;
-    name: string;
+    name?: string;
     images: string[];
     pricePerNight: number;
     amenities: string[];
@@ -11,6 +11,7 @@ export  interface Room{
     price: number;
     createdAt:string;
     updatedAt:string;
+    __v?:number;
     hotel: {
   _id: string;
   name: string;

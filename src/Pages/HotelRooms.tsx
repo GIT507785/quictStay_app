@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useMemo, useState } from "react";
 import { assets, roomsDummyData } from "../assets/assets";
 
 /* ================= TYPES ================= */
@@ -152,7 +152,7 @@ const filteredRooms = useMemo(() => {
   }
 
   return data;
-}, [rooms, selectedTypes, selectedPrices, sort]);
+}, [ selectedTypes, selectedPrices, sort]);
  
    
   
