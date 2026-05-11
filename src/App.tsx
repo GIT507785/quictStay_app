@@ -18,15 +18,16 @@ const App = () => {
 
    const {token} = useContext<any>(AppContext)
 
-    
-
   return (
     <div>
-      {!token ? <Login/> : null}
       <ToastContainer/>
-      {token && <Navbar/>}
+      
+      {!token ? <Login/> : 
+       <Navbar/>
+      }
 
-   <Routes>
+      {!token ? null :
+    <Routes>
      {!token && <Route  path="/login" element={<Login/>}/>}
     <Route  path="/" element={<Home/>}/>
     <Route  path="/room/:roomId" element={<RoomDetail/>}/>
@@ -36,6 +37,7 @@ const App = () => {
     <Route  path="/about" element={<About/>}/>
 
    </Routes>
+}
       {token && <Footer/> } 
 
     </div>

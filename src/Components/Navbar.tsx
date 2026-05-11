@@ -13,7 +13,7 @@ const {token , setToken} = useContext<any>(AppContext)
     { name: "Home", path: "/" },
     { name: "Hotels", path: "/hotel-rooms" },
     { name: "About", path: "/about" },
-    { name: "Experience", path: "/" },
+    // { name: "Experience", path: "/experience" },
   ];
 
   // Scroll effect
@@ -55,7 +55,7 @@ const {token , setToken} = useContext<any>(AppContext)
                     ? "text-green-500"
                     : isScrolled
                     ? "text-black"
-                    : "text-gray-900"
+                    : "text-white"
                 }`
               }
             >
